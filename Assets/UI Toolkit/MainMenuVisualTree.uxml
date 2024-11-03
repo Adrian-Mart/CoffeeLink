@@ -1,0 +1,16 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/StyleSheet.uss?fileID=7433441132597879392&amp;guid=30cfe7c6f7d24df46b63bcf35b3408da&amp;type=3#StyleSheet" />
+    <ui:VisualElement name="MainContainer" style="flex-grow: 1; background-color: rgb(255, 255, 255);">
+        <ui:VisualElement name="TitleContainer" style="flex-grow: 1;">
+            <ui:Label tabindex="-1" text="Coffee Link" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Title" class="title" style="margin-top: 100px;" />
+            <ui:VisualElement name="Logo" style="flex-grow: 1; background-image: resource(&apos;Sprites/Logo&apos;); -unity-background-scale-mode: scale-to-fit; flex-shrink: 0; flex-basis: 70%;" />
+            <ui:Label tabindex="-1" text="¡Bienvenido!" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Subtitle" class="subtitle" />
+            <ui:Label tabindex="-1" text="Inicia sesión para empezar a conocer más de tu café" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Subsubtitle" class="subsubtitle" style="-unity-font-style: normal; margin-right: 100px; margin-left: 100px; margin-top: 50px;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="FieldsContainer" style="flex-grow: 1; justify-content: flex-end; align-self: stretch; align-items: center;">
+            <ui:TextField picking-mode="Ignore" label="Nombre de usuario" name="UserField" class="textField" style="flex-direction: column; align-self: stretch; justify-content: space-between; align-items: center;" />
+            <ui:TextField picking-mode="Ignore" label="Contraseña" name="PasswordField" password="true" class="textField" style="flex-direction: column; align-self: stretch; justify-content: space-around; align-items: center;" />
+            <ui:Button text="Iniciar sesión" parse-escape-sequences="true" display-tooltip-when-elided="true" name="LoginButton" class="button" style="margin-bottom: 100px; margin-top: 100px; background-color: rgb(214, 196, 148); border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; border-bottom-left-radius: 20px; color: rgb(33, 12, 5); font-size: 40px; border-left-color: rgba(149, 149, 149, 0); border-right-color: rgba(149, 149, 149, 0); border-top-color: rgba(149, 149, 149, 0); border-bottom-color: rgba(149, 149, 149, 0);" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

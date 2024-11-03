@@ -1,0 +1,50 @@
+.textField > .unity-text-field__input {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+}
+
+.textField {
+    font-size: 35px;
+    margin-right: 100px;
+    margin-left: 100px;
+    -unity-text-align: middle-center;
+}
+
+.title {
+    -unity-text-align: middle-center;
+    font-size: 96px;
+    -unity-font-style: bold;
+    color: rgb(0, 0, 0);
+}
+
+.subtitle {
+    -unity-text-align: middle-center;
+    font-size: 63px;
+    white-space: normal;
+    text-overflow: ellipsis;
+    color: rgb(214, 196, 148);
+    -unity-font-style: bold;
+}
+
+.subsubtitle {
+    font-size: 39px;
+    -unity-text-align: middle-center;
+    color: rgb(91, 68, 5);
+    -unity-font-style: bold;
+    white-space: normal;
+}
+
+.button:active:enabled {
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    scale: 1.1 1.1;
+    background-color: rgb(158, 144, 109);
+}
