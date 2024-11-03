@@ -10,10 +10,11 @@
 }
 
 .textField {
-    font-size: 35px;
+    font-size: 45px;
     margin-right: 100px;
     margin-left: 100px;
     -unity-text-align: middle-center;
+    -unity-font-definition: resource('Fonts/VarelaRound/VarelaRound-Regular SDF');
 }
 
 .title {
@@ -21,6 +22,7 @@
     font-size: 96px;
     -unity-font-style: bold;
     color: rgb(0, 0, 0);
+    -unity-font-definition: resource('Fonts/DMSerif/DMSerifText-Regular SDF');
 }
 
 .subtitle {
@@ -33,11 +35,13 @@
 }
 
 .subsubtitle {
-    font-size: 39px;
+    font-size: 40px;
     -unity-text-align: middle-center;
-    color: rgb(91, 68, 5);
-    -unity-font-style: bold;
+    color: rgb(255, 171, 0);
+    -unity-font-style: normal;
     white-space: normal;
+    -unity-font-definition: resource('Fonts/VarelaRound/VarelaRound-Regular SDF');
+    -unity-font: resource('Fonts/VarelaRound/VarelaRound-Regular');
 }
 
 .button:active:enabled {
@@ -46,5 +50,5 @@
     border-top-color: rgba(0, 0, 0, 0);
     border-bottom-color: rgba(0, 0, 0, 0);
     scale: 1.1 1.1;
-    background-color: rgb(158, 144, 109);
+    background-color: rgb(255, 188, 51);
 }
