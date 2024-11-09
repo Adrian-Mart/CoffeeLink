@@ -1,0 +1,43 @@
+.main {
+    -unity-font-definition: resource('Fonts/VarelaRound/VarelaRound-Regular SDF');
+}
+
+.navigationButton {
+    background-color: rgba(0, 0, 0, 0);
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    -unity-background-scale-mode: scale-to-fit;
+    height: 50%;
+    width: 50%;
+    margin-top: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    margin-left: 40px;
+}
+
+.navigationButtonContainer {
+    flex-direction: column;
+    -unity-text-align: upper-center;
+    flex-basis: 25%;
+    justify-content: space-around;
+    align-items: stretch;
+    font-size: 30px;
+    flex-grow: 1;
+    align-self: stretch;
+    height: auto;
+    width: auto;
+}
+
+.navigationButton:active:enabled {
+    scale: 1.1 1.1;
+}
+
+.navigationContainer {
+    background-color: rgb(255, 255, 255);
+}
+
+.hide {
+    display: none;
+}
