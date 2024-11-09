@@ -34,6 +34,8 @@ public class NavigationMenuEvents : MonoBehaviour
         _document.rootVisualElement.Q<Button>("DiscoverButton").clicked += () => ShowDiscover();
         _document.rootVisualElement.Q<Button>("SettingsButton").clicked += () => ShowSettings();
         _document.rootVisualElement.Q<Button>("ARButton").clicked += () => ShowAR();
+
+        ShowDatabase();
     }
 
     private void ShowDatabase()
@@ -44,7 +46,7 @@ public class NavigationMenuEvents : MonoBehaviour
         discoverContainer.style.display = DisplayStyle.None;
         settingsContainer.style.display = DisplayStyle.None;
         mainContainer.style.backgroundColor = backgroundColor;
-        Debug.Log("Database color: " + databaseContainer.style.backgroundColor.value);
+        
     }
 
     private void ShowDiscover()
