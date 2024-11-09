@@ -1,0 +1,14 @@
+:root {
+    --main-color: rgb(255, 171, 0);
+    --secondary-color: #282828;
+}
+
+.mainColor {
+    background-color: var(--main-color);
+    color: rgb(55, 28, 0);
+}
+
+.secondaryColor {
+    background-color: var(--secondary-color);
+    color: rgb(55, 28, 0);
+}
