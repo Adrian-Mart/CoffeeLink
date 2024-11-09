@@ -6,7 +6,7 @@ using UnityEngine.UIElements;
 
 public class NavigationMenuEvents : MonoBehaviour
 {
-    [SerializeField] private Color backgroundColor;
+    private Color backgroundColor;
     private Color transparentColor = new Color(0, 0, 0, 0);
 
     private UIDocument _document;
@@ -19,6 +19,8 @@ public class NavigationMenuEvents : MonoBehaviour
     private VisualElement discoverContainer;
     private VisualElement mainContainer;
 
+    private static readonly CustomStyleProperty<Color> _secondaryColor = new CustomStyleProperty<Color>("--secondary-color");
+
     void Start()
     {
         _document = GetComponent<UIDocument>();
@@ -29,6 +31,8 @@ public class NavigationMenuEvents : MonoBehaviour
         discoverContainer = _document.rootVisualElement.Q<VisualElement>("DiscoverContainer");
         settingsContainer = _document.rootVisualElement.Q<VisualElement>("SettingsContainer");
         mainContainer = _document.rootVisualElement.Q<VisualElement>("MainContainer");
+        
+        _document.rootVisualElement.RegisterCallback<CustomStyleResolvedEvent>(OnCustomStyleResolved);
 
         _document.rootVisualElement.Q<Button>("DatabaseButton").clicked += () => ShowDatabase();
         _document.rootVisualElement.Q<Button>("DiscoverButton").clicked += () => ShowDiscover();
@@ -36,6 +40,12 @@ public class NavigationMenuEvents : MonoBehaviour
         _document.rootVisualElement.Q<Button>("ARButton").clicked += () => ShowAR();
 
         ShowDatabase();
+    }
+
+    private void OnCustomStyleResolved(CustomStyleResolvedEvent evt)
+    {
+        if (evt.customStyle.TryGetValue(_secondaryColor, out var secondaryColor))
+            backgroundColor = secondaryColor;
     }
 
     private void ShowDatabase()
@@ -46,7 +56,6 @@ public class NavigationMenuEvents : MonoBehaviour
         discoverContainer.style.display = DisplayStyle.None;
         settingsContainer.style.display = DisplayStyle.None;
         mainContainer.style.backgroundColor = backgroundColor;
-        
     }
 
     private void ShowDiscover()

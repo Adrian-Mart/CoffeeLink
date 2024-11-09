@@ -1,17 +1,18 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/UI%20Toolkit/NavigationStyleSheet.uss?fileID=7433441132597879392&amp;guid=825f0a6518eb61a4ea91a4b70172bbeb&amp;type=3#NavigationStyleSheet" />
+    <Style src="project://database/Assets/UI%20Toolkit/GeneralStyleSheet.uss?fileID=7433441132597879392&amp;guid=835aa51f3bf59c84aab96f382bfb4229&amp;type=3#GeneralStyleSheet" />
     <ui:VisualElement name="MainContainer" class="main" style="flex-grow: 1;">
         <ui:VisualElement name="BodyContainer" style="flex-grow: 1; flex-basis: 88%;">
             <ui:VisualElement name="ARContainer" class="navigationContainer" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);" />
-            <ui:VisualElement name="DatabaseContainer" class="navigationContainer" style="flex-grow: 1;" />
-            <ui:VisualElement name="DiscoverContainer" class="navigationContainer" style="flex-grow: 1;" />
-            <ui:VisualElement name="SettingsContainer" class="navigationContainer" style="flex-grow: 1;" />
+            <ui:VisualElement name="DatabaseContainer" class="navigationContainer secondaryColor" style="flex-grow: 1;" />
+            <ui:VisualElement name="DiscoverContainer" class="navigationContainer secondaryColor" style="flex-grow: 1;" />
+            <ui:VisualElement name="SettingsContainer" class="navigationContainer secondaryColor" style="flex-grow: 1;" />
         </ui:VisualElement>
-        <ui:VisualElement name="NavigationContiner" style="flex-grow: 1; background-color: rgb(255, 171, 0); flex-basis: initial; flex-direction: row; justify-content: space-around; border-top-left-radius: 50px; border-top-right-radius: 50px;">
-            <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="ARButton" class="navigationButton navigationButtonContainer" style="background-image: resource(&apos;Sprites/Vectors/ar-svgrepo-com&apos;);" />
-            <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="DatabaseButton" class="navigationButton navigationButtonContainer" style="background-image: resource(&apos;Sprites/Vectors/bookmark-svgrepo-com&apos;);" />
-            <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="DiscoverButton" class="navigationButton navigationButtonContainer" style="background-image: resource(&apos;Sprites/Vectors/heart-add-svgrepo-com&apos;);" />
-            <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="SettingsButton" class="navigationButton navigationButtonContainer" style="background-image: resource(&apos;Sprites/Vectors/settings-svgrepo-com&apos;);" />
+        <ui:VisualElement name="NavigationContiner" class="mainColor" style="flex-grow: 1; flex-basis: initial; flex-direction: row; justify-content: space-around; border-top-left-radius: 50px; border-top-right-radius: 50px;">
+            <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="ARButton" class="navigationButton navigationButtonContainer mainColor" style="background-image: resource(&apos;Sprites/Vectors/ar-svgrepo-com&apos;);" />
+            <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="DatabaseButton" class="navigationButton navigationButtonContainer mainColor" style="background-image: resource(&apos;Sprites/Vectors/bookmark-svgrepo-com&apos;);" />
+            <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="DiscoverButton" class="navigationButton navigationButtonContainer mainColor" style="background-image: resource(&apos;Sprites/Vectors/heart-add-svgrepo-com&apos;);" />
+            <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="SettingsButton" class="navigationButton navigationButtonContainer mainColor" style="background-image: resource(&apos;Sprites/Vectors/settings-svgrepo-com&apos;);" />
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>
