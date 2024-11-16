@@ -122,6 +122,43 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &210600219 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2683106692729362737, guid: 79324d24229d3754da0f475853139960,
+    type: 3}
+  m_PrefabInstance: {fileID: 2580540993072661402}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &210600222 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5588345339402211371, guid: 79324d24229d3754da0f475853139960,
+    type: 3}
+  m_PrefabInstance: {fileID: 2580540993072661402}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 210600219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1631628248, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &210600226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 210600219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 210600222}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: Coffee_1
+  mDatasetName: Vuforia/Coffee_Link.xml
+  mCastedBehaviour: {fileID: 210600222}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &361237881
 GameObject:
   m_ObjectHideFlags: 0
@@ -274,7 +311,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aff757faddf97a4409c0443f589a3e33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  backgroundColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1211779471
 GameObject:
   m_ObjectHideFlags: 0
@@ -499,7 +535,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1439999908}
   - component: {fileID: 1439999907}
-  - component: {fileID: 1439999906}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -507,14 +542,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &1439999906
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1439999905}
-  m_Enabled: 1
 --- !u!20 &1439999907
 Camera:
   m_ObjectHideFlags: 0
@@ -581,6 +608,134 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &2580540993072661402
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 455305718995808458, guid: 79324d24229d3754da0f475853139960,
+        type: 3}
+      propertyPath: mHiddenRoot
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 455305718995808458, guid: 79324d24229d3754da0f475853139960,
+        type: 3}
+      propertyPath: mMeshFilter
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 455305718995808458, guid: 79324d24229d3754da0f475853139960,
+        type: 3}
+      propertyPath: mMeshRenderer
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2082160362774636953, guid: 79324d24229d3754da0f475853139960,
+        type: 3}
+      propertyPath: OnTargetLost.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2082160362774636953, guid: 79324d24229d3754da0f475853139960,
+        type: 3}
+      propertyPath: OnTargetLost.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2082160362774636953, guid: 79324d24229d3754da0f475853139960,
+        type: 3}
+      propertyPath: OnTargetLost.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 825387247}
+    - target: {fileID: 2082160362774636953, guid: 79324d24229d3754da0f475853139960,
+        type: 3}
+      propertyPath: OnTargetFound.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 825387247}
+    - target: {fileID: 2082160362774636953, guid: 79324d24229d3754da0f475853139960,
+        type: 3}
+      propertyPath: OnTargetLost.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2082160362774636953, guid: 79324d24229d3754da0f475853139960,
+        type: 3}
+      propertyPath: OnTargetLost.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnTargetLost
+      objectReference: {fileID: 0}
+    - target: {fileID: 2082160362774636953, guid: 79324d24229d3754da0f475853139960,
+        type: 3}
+      propertyPath: OnTargetLost.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: NavigationMenuEvents, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2082160362774636953, guid: 79324d24229d3754da0f475853139960,
+        type: 3}
+      propertyPath: OnTargetLost.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2227857065551610534, guid: 79324d24229d3754da0f475853139960,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2227857065551610534, guid: 79324d24229d3754da0f475853139960,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2227857065551610534, guid: 79324d24229d3754da0f475853139960,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2227857065551610534, guid: 79324d24229d3754da0f475853139960,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2227857065551610534, guid: 79324d24229d3754da0f475853139960,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2227857065551610534, guid: 79324d24229d3754da0f475853139960,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2227857065551610534, guid: 79324d24229d3754da0f475853139960,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2227857065551610534, guid: 79324d24229d3754da0f475853139960,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2227857065551610534, guid: 79324d24229d3754da0f475853139960,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2227857065551610534, guid: 79324d24229d3754da0f475853139960,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2683106692729362737, guid: 79324d24229d3754da0f475853139960,
+        type: 3}
+      propertyPath: m_Name
+      value: Coffe Target
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 455305718995808458, guid: 79324d24229d3754da0f475853139960, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2683106692729362737, guid: 79324d24229d3754da0f475853139960,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 210600226}
+  m_SourcePrefab: {fileID: 100100000, guid: 79324d24229d3754da0f475853139960, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -590,3 +745,4 @@ SceneRoots:
   - {fileID: 361237884}
   - {fileID: 825387246}
   - {fileID: 1439999908}
+  - {fileID: 2580540993072661402}

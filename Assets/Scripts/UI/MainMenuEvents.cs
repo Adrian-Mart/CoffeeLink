@@ -35,6 +35,7 @@ public class MainMenuEvents : MonoBehaviour
         if (_users.ContainsKey(username) && _users[username] == password)
         {
             Debug.Log("Login successful");
+            UnityEngine.SceneManagement.SceneManager.LoadScene(1);
         }
         else
         {

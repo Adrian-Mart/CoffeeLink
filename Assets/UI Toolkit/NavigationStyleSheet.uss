@@ -41,3 +41,42 @@
 .hide {
     display: none;
 }
+
+.arNavButton {
+    -unity-background-scale-mode: scale-to-fit;
+    flex-basis: 10%;
+    align-self: center;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0);
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+}
+
+.arNavButton:active:enabled {
+    scale: 1.1 1.1;
+}
+
+.textField > .unity-text-field__input {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+}
+
+.checkButton {
+    font-size: 25px;
+}
+
+.databaseButton {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    font-size: 35px;
+}
