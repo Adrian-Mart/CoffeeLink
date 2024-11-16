@@ -1,6 +1,6 @@
 :root {
     --main-color: rgb(255, 171, 0);
-    --secondary-color: #282828;
+    --secondary-color: rgb(40, 40, 40);
 }
 
 .mainColor {
@@ -10,5 +10,5 @@
 
 .secondaryColor {
     background-color: var(--secondary-color);
-    color: rgb(55, 28, 0);
+    color: rgb(255, 255, 255);
 }
