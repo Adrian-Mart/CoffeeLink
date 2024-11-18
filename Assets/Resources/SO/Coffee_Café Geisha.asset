@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e52af70a421b7a42a57199b38d187d3, type: 3}
+  m_Name: "Coffee_Caf\xE9 Geisha"
+  m_EditorClassIdentifier: 
+  coffeName: "Caf\xE9 Geisha"
+  description: "Descubre el encanto de nuestro caf\xE9 de origen Oaxaca, cuidadosamente
+    cultivado a una altura de 1450 metros sobre el nivel del mar. Este caf\xE9, de
+    las variedades T\xEDpica y Bourbon, te ofrece una experiencia sensorial \xFAnica. 
+    Desde el primer sorbo, el delicado aroma a jazm\xEDn te envuelve, preparando
+    tus sentidos para los sabores vibrantes y refinados que seguir\xE1n. En cada
+    taza, la frescura de la toronja se mezcla armoniosamente con un toque c\xE1lido
+    y especiado de canela, creando un perfil de sabor equilibrado y cautivador. 
+    Con una acidez c\xEDtrica que refresca el paladar y un cuerpo ligero que se desplaza
+    suavemente, este caf\xE9 promete una experiencia agradable y ligera, perfecta
+    para cualquier momento del d\xEDa. Su tueste medio resalta las caracter\xEDsticas
+    naturales del grano, mientras la subespecie Geisha aporta una complejidad y una
+    elegancia que distinguen a este caf\xE9 como una aut\xE9ntica joya de Oaxaca. 
+    Perm\xEDtete el lujo de disfrutar de esta deliciosa mezcla que celebra la riqueza
+    y la tradici\xF3n del caf\xE9 oaxaque\xF1o."
+  map: {fileID: 21300000, guid: fe9a3b9b0bd5b7843bf6b5a8dbdd2713, type: 3}
+  altitude: 1450 metros sobre el nivel del mar
+  location: "Oax\xE1ca, Santiago Nuyo\xF3"
+  process: Lavado
+  opinion: "\xA1Este caf\xE9 de Oaxaca es una delicia! El aroma a jazm\xEDn es encantador,
+    y los sabores de toronja y canela son simplemente perfectos. Me encanta su acidez
+    c\xEDtrica y su cuerpo ligero. Sin duda, uno de los mejores que he probado."
+  aroma: "Jazm\xEDn"
+  taste: Toronja y canela
