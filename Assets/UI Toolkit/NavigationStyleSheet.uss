@@ -52,6 +52,8 @@
     border-right-color: rgba(0, 0, 0, 0);
     border-top-color: rgba(0, 0, 0, 0);
     border-bottom-color: rgba(0, 0, 0, 0);
+    margin-right: 50px;
+    margin-left: 50px;
 }
 
 .arNavButton:active:enabled {
@@ -78,5 +80,16 @@
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
-    font-size: 35px;
+    font-size: 40px;
+    white-space: normal;
+    text-overflow: clip;
+    -unity-text-align: middle-center;
+    border-left-color: rgb(255, 171, 0);
+    border-right-color: rgb(255, 171, 0);
+    border-top-color: rgb(255, 171, 0);
+    border-bottom-color: rgb(255, 171, 0);
+    border-top-width: 5px;
+    border-bottom-width: 5px;
+    border-right-width: 2px;
+    border-left-width: 2px;
 }

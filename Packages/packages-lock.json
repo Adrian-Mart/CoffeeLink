@@ -1,13 +1,13 @@
 {
   "dependencies": {
     "com.ptc.vuforia.engine": {
-      "version": "file:com.ptc.vuforia.engine-10.27.3.tgz",
+      "version": "git+https://git-packages.developer.vuforia.com#9.8.13",
       "depth": 0,
-      "source": "local-tarball",
+      "source": "git",
       "dependencies": {
-        "com.unity.ugui": "1.0.0",
-        "com.unity.nuget.newtonsoft-json": "3.2.1"
-      }
+        "com.unity.ugui": "1.0.0"
+      },
+      "hash": "25bf43b1d81a6c02933d6ed6dca633b57d9831fd"
     },
     "com.unity.2d.sprite": {
       "version": "1.0.0",
@@ -97,13 +97,6 @@
       "dependencies": {
         "com.unity.modules.androidjni": "1.0.0"
       },
-      "url": "https://packages.unity.com"
-    },
-    "com.unity.nuget.newtonsoft-json": {
-      "version": "3.2.1",
-      "depth": 1,
-      "source": "registry",
-      "dependencies": {},
       "url": "https://packages.unity.com"
     },
     "com.unity.profiling.core": {

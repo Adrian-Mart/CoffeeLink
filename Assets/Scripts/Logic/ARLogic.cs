@@ -183,12 +183,62 @@ public class ARLogic
     }
 }
 
+/// <summary>
+/// Represents the different states of the AR (Augmented Reality) experience.
+/// </summary>
+/// <remarks>
+/// The possible states are:
+/// <list type="bullet">
+///   <item>
+///     <term><c>NotDetected</c></term>
+///     <description>AR target is not detected.</description>
+///   </item>
+///   <item>
+///     <term><c>ShowTaste</c></term>
+///     <description>Display information about taste.</description>
+///   </item>
+///   <item>
+///     <term><c>ShowAroma</c></term>
+///     <description>Display information about aroma.</description>
+///   </item>
+///   <item>
+///     <term><c>ShowRating</c></term>
+///     <description>Display rating information.</description>
+///   </item>
+///   <item>
+///     <term><c>ShowMap</c></term>
+///     <description>Display map or location information.</description>
+///   </item>
+///   <item>
+///     <term><c>ShowBean</c></term>
+///     <description>Display information about coffee beans.</description>
+///   </item>
+/// </list>
+/// </remarks>
 public enum ARState
 {
+    /// <summary>
+    /// AR target is not detected.
+    /// </summary>
     NotDetected,
+    /// <summary>
+    /// Display information about taste.
+    /// </summary>
     ShowTaste,
+    /// <summary>
+    /// Display information about aroma.
+    /// </summary>
     ShowAroma,
+    /// <summary>
+    /// Display rating information.
+    /// </summary>
     ShowRating,
+    /// <summary>
+    /// Display map or location information.
+    /// </summary>
     ShowMap,
+    /// <summary>
+    /// Display information about coffee beans.
+    /// </summary>
     ShowBean
 }
