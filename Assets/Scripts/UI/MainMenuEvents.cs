@@ -24,6 +24,11 @@ public class MainMenuEvents : MonoBehaviour
         _loginButton = _uiDocument.rootVisualElement.Q<Button>("LoginButton");
         _usernameField = _uiDocument.rootVisualElement.Q<TextField>("UserField");
         _passwordField = _uiDocument.rootVisualElement.Q<TextField>("PasswordField");
+
+        // TouchScreenKeyboard.Open("", TouchScreenKeyboardType.Default) on usernameField focus
+        _usernameField.RegisterCallback<FocusEvent>(ev => TouchScreenKeyboard.Open("", TouchScreenKeyboardType.Default));
+        _passwordField.RegisterCallback<FocusEvent>(ev => TouchScreenKeyboard.Open("", TouchScreenKeyboardType.Default, false, false, true));
+
         _loginButton.RegisterCallback<ClickEvent>(ev => OnLoginButtonClicked());
     }
 
