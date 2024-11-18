@@ -27,9 +27,9 @@ MonoBehaviour:
     elegancia que distinguen a este caf\xE9 como una aut\xE9ntica joya de Oaxaca. 
     Perm\xEDtete el lujo de disfrutar de esta deliciosa mezcla que celebra la riqueza
     y la tradici\xF3n del caf\xE9 oaxaque\xF1o."
-  map: {fileID: 0}
+  map: {fileID: 21300000, guid: fe9a3b9b0bd5b7843bf6b5a8dbdd2713, type: 3}
   altitude: 1450 metros sobre el nivel del mar
-  location: "Oax\xE1ca, Uni\xF3n y progreso - Santiago Nuyo\xF3"
+  location: "Oax\xE1ca, Santiago Nuyo\xF3"
   process: Lavado
   opinion: "\xA1Este caf\xE9 de Oaxaca es una delicia! El aroma a jazm\xEDn es encantador,
     y los sabores de toronja y canela son simplemente perfectos. Me encanta su acidez
